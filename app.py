@@ -39,5 +39,15 @@ def subtracao():
     resultado = operacoes.calcular_subtracao(valor1, valor2)
     return jsonify({"resultado": resultado})
 
+# Página de Multiplicação
+@app.route("/multiplicacao")
+def multiplicacao_page():
+    return render_template("multiplicacao.html")
+
+# Página de Divisão
+@app.route("/divisao")
+def divisao_page():
+    return render_template("divisao.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
